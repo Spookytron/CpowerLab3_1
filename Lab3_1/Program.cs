@@ -13,7 +13,7 @@ namespace Lab3_1
             {
                
 
-                Console.WriteLine("Would you like to try again? (y/n)");
+                Console.WriteLine("Would you like to learn about another student?(y/n)");
 
                 string response = Console.ReadLine();
                 response = response.ToLower();
@@ -63,7 +63,6 @@ namespace Lab3_1
                         else
                         {
                             Console.WriteLine("Please enter either 1 or 2");
-                            return false;
                         }
 
                     }
@@ -106,7 +105,7 @@ namespace Lab3_1
                         {
                             Console.WriteLine($"{names[entry - 1]} loves {food[entry - 1]}.");
                         }
-                        else if(entry2==2)
+                        else if (entry2 == 2)
                         {
                             Console.WriteLine($"{names[entry - 1]} was formerly a {title[entry - 1]}");
                         }
@@ -116,13 +115,18 @@ namespace Lab3_1
                         }
 
                     }
+                    else
+                    {
+                        Console.WriteLine("Please enter y/n.");
+                    }
                 }
                 else
                 {
                     Console.WriteLine("Please enter a number 1-3");
                 }
             }
-            while (KeepGoing());   
+            while (KeepGoing());
+            Console.WriteLine("Thank you for using our DevBuild Student Registry!");
             
 
             
